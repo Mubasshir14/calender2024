@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>January Month</title>
+    <script src="https://kit.fontawesome.com/6d4eb52877.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .month {
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .calender {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            column-gap: 10px;
+            row-gap: 20px;
+        }
+
+        .day,
+        .date {
+            position: relative;
+            background-color: skyblue;
+            border-radius: 5px;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        .friday {
+            color: red;
+        }
+
+        .date:hover {
+            transform: scale(1.1);
+            border: 2px solid aqua;
+            border-radius: 10px;
+        }
+
+        .day:hover {
+            transform: scale(1.1);
+            border: 2px solid aqua;
+            border-radius: 10px;
+        }
+
+        .day {
+            background-color: rgb(37, 219, 219);
+        }
+
+        .jan {
+            background-color: rgb(4, 88, 88);
+            opacity: 0.5;
+        }
+
+        .jan:hover {
+            transform: none;
+            border: 0;
+            border-radius: 0;
+            opacity: 0.4;
+        }
+
+        h1 {
+            align-items: center;
+            margin-bottom: 10px;
+            /* Adjust as needed */
+        }
+
+        .in {
+            display: flex;
+            margin-top: 20px;
+            gap: 180px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        span {
+            color: rgb(238, 13, 13);
+        }
+
+        button {
+            color: rgb(15, 57, 207);
+            background-color: aquamarine;
+            /* Set button color to aquamarine */
+            font-size: 1.2em;
+            /* Increase font size */
+            padding: 10px;
+            /* Add padding */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .tooltip {
+            position: relative;
+        }
+
+        .tooltip .sun, .mon, .tues, .wed, .thus, .fri, .sat {
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 5px;
+            border-radius: 5px;
+            display: none;
+            font-size: xx-small;
+        }
+
+        .tooltip:hover .sun {
+            visibility: visible;
+            display: block;
+        }
+        .tooltip:hover .mon {
+            visibility: visible;
+            display: block;
+        }
+        .tooltip:hover .tues {
+            visibility: visible;
+            display: block;
+        }
+        .tooltip:hover .wed {
+            visibility: visible;
+            display: block;
+        }
+        .tooltip:hover .thus {
+            visibility: visible;
+            display: block;
+        }
+        .tooltip:hover .fri {
+            visibility: visible;
+            display: block;
+        }
+        .tooltip:hover .sat {
+            visibility: visible;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="month">
+        <h1>J<span>u</span>l<span>y</span></h1>
+    </section>
+    <section class="container">
+        <div class="calender">
+            <div class="day tooltip">S
+                <span class="sun">Sunday</span>
+            </div>
+            <div class="day tooltip">M
+                <span class="mon">Monday</span>
+            </div>
+            <div class="day tooltip">T
+                <span class="tues">Tuesday</span>
+            </div>
+            <div class="day tooltip">W
+                <span class="wed">Wednesday</span>
+            </div>
+            <div class="day tooltip">T
+                <span class="thus">Thursday</span>
+            </div>
+            <div class="day tooltip">F
+                <span class="fri">Friday</span>
+            </div>
+            <div class="day tooltip">S
+                <span class="sat">Saturday</span>
+            </div>
+            <div class="date jan"></div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date friday">5</div>
+            <div class="date friday">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date friday">12</div>
+            <div class="date friday">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date friday">17*</div>
+            <div class="date">18</div>
+            <div class="date friday">19</div>
+            <div class="date friday">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date friday">26</div>
+            <div class="date friday">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date jan"></div>
+            <div class="date jan"></div>
+            <div class="date jan"></div>
+        </div>
+    </section>
+    <section class="in">
+        <a href="njune.html" type="submit"><button class="previous"><i class="fa-solid fa-backward"></i> Previous</button></a>
+        <a href="paugust.html" type="submit"><button>Next <i class="fa-solid fa-forward"></i></button></a>
+    </section>
+
+</body>
+
+</html>
